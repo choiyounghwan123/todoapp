@@ -17,7 +17,7 @@ A simple Todo application built with Spring Boot and Kotlin, using MySQL for dat
 
 ## Demonstration
 
-![Screenshot](images/screenshot.png)
+![Screenshot](스크린샷 2024-07-22 오후 4.08.05.png)
 
 ## Features
 
