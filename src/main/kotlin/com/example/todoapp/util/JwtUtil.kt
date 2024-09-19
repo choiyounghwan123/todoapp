@@ -2,6 +2,7 @@ package com.example.todoapp.util
 
 import com.example.todoapp.entity.RefreshToken
 import com.example.todoapp.entity.User
+import com.example.todoapp.exception.TokenNotFoundException
 import com.example.todoapp.repository.RefreshTokenRepository
 import com.example.todoapp.repository.UserRepository
 import io.jsonwebtoken.Claims
@@ -40,7 +41,9 @@ class JwtUtil(
     private val refreshTokenValidity: Long = 604800000L
 
     fun resolveToken(request: HttpServletRequest):String? {
-        return request.getHeader("Authorization")
+        val authorizationHeader: String = request.getHeader("Authorization") ?: return null
+
+        return authorizationHeader.takeIf { it.startsWith("Bearer ") }?.substring(7)
     }
 
     fun generateAccessToken(authentication: Authentication): String{

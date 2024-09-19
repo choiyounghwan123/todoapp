@@ -42,6 +42,7 @@ class SecurityConfig(
             .authorizeHttpRequests {
                 it
                     .requestMatchers("/api/auth/register", "/api/auth/login", "/api/auth/logout").permitAll()
+                    .requestMatchers("/api/tasks","/api/tasks/**").hasRole("USER")
                     .anyRequest().authenticated()
             }
             .sessionManagement {

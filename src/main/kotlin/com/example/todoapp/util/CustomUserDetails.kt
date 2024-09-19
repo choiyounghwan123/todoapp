@@ -10,6 +10,10 @@ class CustomUserDetails (private val user:User): UserDetails{
         return mutableListOf( SimpleGrantedAuthority("ROLE_USER"))
     }
 
+    fun getUserId():Long{
+        return user.id
+    }
+
     override fun getPassword(): String {
         return user.password
     }

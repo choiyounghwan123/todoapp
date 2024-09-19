@@ -25,8 +25,7 @@ class LogoutService(
 
     @Transactional
     override fun logout(request: HttpServletRequest, response: HttpServletResponse?, authentication: Authentication?) {
-        val authorizationHeader = jwtUtil.resolveToken(request)
-        val accessToken: String? = authorizationHeader?.takeIf { it.startsWith("Bearer ") }?.substring(7)
+        val accessToken = jwtUtil.resolveToken(request)
 
         if (accessToken == null) {
             logger.error("Token not found")

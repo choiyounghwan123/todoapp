@@ -1,5 +1,6 @@
 package com.example.todoapp.util.filter
 
+import com.example.todoapp.exception.TokenNotFoundException
 import com.example.todoapp.repository.BlackListRepository
 import com.example.todoapp.util.JwtUtil
 import io.jsonwebtoken.ExpiredJwtException
@@ -23,9 +24,7 @@ class JwtFilter(private val jwtUtil: JwtUtil,
         response: HttpServletResponse,
         filterChain: FilterChain
     ) {
-        val authorizationHeader:String? = jwtUtil.resolveToken(request)
-        val accessToken = authorizationHeader?.takeIf { it.startsWith("Bearer ") }?.substring(7)
-
+        val accessToken:String? = jwtUtil.resolveToken(request)
         try {
             if (accessToken != null && jwtUtil.accessTokenValidateToken(accessToken)){
                 if(blackListRepository.existsById(accessToken)){
@@ -43,7 +42,9 @@ class JwtFilter(private val jwtUtil: JwtUtil,
             logger.warn("Access token expired: ${e.message}")
             SecurityContextHolder.clearContext()
         }catch (e: Exception){
-            logger.warn("An error occurred during token processing: ${e.message}")
+            logger.warn("An error occurred during token processing: ${e.message} ${accessToken}")
+            SecurityContextHolder.clearContext()
+        }catch (e: TokenNotFoundException){
             SecurityContextHolder.clearContext()
         }
         filterChain.doFilter(request,response)
