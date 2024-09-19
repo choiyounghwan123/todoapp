@@ -1,6 +1,6 @@
 package com.example.todoapp.service
 
-import com.example.todoapp.dto.RegisterUserDto
+import com.example.todoapp.dto.register.RegisterUserDto
 import com.example.todoapp.entity.User
 import com.example.todoapp.repository.UserRepository
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder

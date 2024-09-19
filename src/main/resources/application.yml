@@ -3,3 +3,8 @@ spring:
     redis:
       host: localhost
       port: 6379
+    jwt:
+      access_secret: P21O23rjIawHf+IcphwF6oGKoW2g26GS+tnCZtxQeM2z7DekrX7lhheVPIko835jvDm8F7fVVkt2oROTxMDx0g==
+      refresh_secret: 8DjFmPXnVJtc3JtaoA2r+QPI0Lu7ZQO/MQJx5ZZiudaYFoHvr7RWWWrIi6jiQvIboz6VYrtLPfEP7koCFFC9MA==
+
+

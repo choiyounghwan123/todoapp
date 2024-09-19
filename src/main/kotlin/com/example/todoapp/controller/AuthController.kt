@@ -1,6 +1,6 @@
 package com.example.todoapp.controller
 
-import com.example.todoapp.dto.RegisterUserDto
+import com.example.todoapp.dto.register.RegisterUserDto
 import com.example.todoapp.service.UserService
 import jakarta.validation.Valid
 import org.springframework.http.ResponseEntity
