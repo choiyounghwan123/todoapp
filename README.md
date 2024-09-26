@@ -36,7 +36,6 @@
   - JWT 토큰을 사용한 보안 인증
 - **Todo CRUD 기능**
   - 할 일 추가, 조회, 수정, 삭제
-  - 상태 관리 (예: 완료, 진행 중)
 - **데이터 저장소**
   - MySQL을 사용한 영구 데이터 저장
   - Redis를 활용한 캐싱 및 세션 관리
@@ -61,13 +60,11 @@
 ## 📸 스크린샷
 
 ### 로그인 페이지
-![로그인 페이지](https://github.com/your-username/todoapp/assets/login-page.png)
+<img width="80%" alt="스크린샷 2024-09-26 오후 7 31 31" src="https://github.com/user-attachments/assets/373d6050-d347-44bd-85a8-07ac2037e39b">
+
 
 ### Todo 목록
-![Todo 목록](https://github.com/your-username/todoapp/assets/todo-list.png)
-
-### Todo 추가/수정
-![Todo 추가/수정](https://github.com/your-username/todoapp/assets/todo-form.png)
+<img width="80%" alt="스크린샷 2024-09-26 오후 7 37 29" src="https://github.com/user-attachments/assets/28ccbf7c-5fde-4378-9476-f69329bfd099">
 
 
 ---
