@@ -1,6 +1,6 @@
 # TodoApp
 <p align="center">
-  <img width="80%" alt="TodoApp 배너 이미지" src="https://github.com/your-username/todoapp/assets/your-image-link">
+  <img width="80%" alt="스크린샷 2024-09-26 오후 7 31 19" src="https://github.com/user-attachments/assets/02a49d71-7133-4e29-bb9e-58f78c710c3e">
 </p>
 
 [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
