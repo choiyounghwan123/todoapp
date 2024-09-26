@@ -19,9 +19,6 @@
 - [🛠️ 주요 기능](#️-주요-기능)
 - [🧰 사용 기술](#️-사용-기술)
 - [📸 스크린샷](#-스크린샷)
-- [🚀 설치 및 실행 방법](#-설치-및-실행-방법)
-- [📁 프로젝트 구조](#-프로젝트-구조)
-- [🤝 기여 방법](#-기여-방법)
 - [📝 라이선스](#-라이선스)
 - [📫 연락처](#-연락처)
 - [🎯 향후 계획](#-향후-계획)
@@ -57,7 +54,7 @@
 | **프론트엔드**  | React, Redux, Axios, JWT                          |
 | **백엔드**      | Kotlin, Spring Boot, Spring Security, JWT         |
 | **데이터베이스**| MySQL, Redis                                      |
-| **기타**        | Docker, Docker Compose, Git, GitHub Actions        |
+| **기타**        | Docker, Docker Compose, Git, GitHub      |
 
 ---
 
@@ -85,9 +82,8 @@
 
 프로젝트에 대한 문의는 다음을 통해 연락주세요:
 
-- **이메일**: your-email@example.com
-- **LinkedIn**: [your-linkedin](https://www.linkedin.com/in/your-linkedin/)
-- **GitHub**: [your-username](https://github.com/your-username)
+- **이메일**: fdgdfgdgf123@icloud.com
+- **GitHub**: [choiyounghwan123](https://github.com/choiyounghwan123)
 
 ---
 
